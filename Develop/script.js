@@ -1,7 +1,12 @@
 // Assignment code here
 
-// Get references to the #generate element
+// The red generate button
 var generateBtn = document.querySelector("#generate");
+
+// Define generatePassword
+function generatePassword() {
+  console.log("red button clicked");
+}
 
 // Write password to the #password input
 function writePassword() {
