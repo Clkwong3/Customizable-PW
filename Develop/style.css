@@ -30,7 +30,7 @@ header {
   color: hsl(206, 17%, 28%);
 }
 
-.card {
+.display {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
   border-width: 1px;
@@ -42,7 +42,7 @@ header {
   padding: 30px 40px;
 }
 
-.card-header::after {
+.dheader::after {
   content: " ";
   display: block;
   width: 100%;
@@ -50,15 +50,15 @@ header {
   height: 2px;
 }
 
-.card-body {
+.dbody {
   min-height: 100px;
 }
 
-.card-footer {
+.dfooter {
   text-align: center;
 }
 
-.card-footer::before {
+.dfooter::before {
   content: " ";
   display: block;
   width: 100%;
@@ -66,7 +66,7 @@ header {
   height: 2px;
 }
 
-.card-footer::after {
+.dfooter::after {
   content: " ";
   display: block;
   clear: both;

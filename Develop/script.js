@@ -13,11 +13,3 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
-// Responsive Screen
-// @media screen and (max-width: 768px){
-//   main,
-//   div {
-//     flex-direction: column;
-//   }
-// }
