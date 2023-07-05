@@ -99,6 +99,23 @@ var specialCharArray = [
 // The red generate button
 var generateBtn = document.querySelector("#generate");
 
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
+
+// Write password to the #password input
+function writePassword() {
+  var inputGathered = generatePassword();
+  var passwordText = document.querySelector("#password");
+
+  // password will only be generated if prompts are answered correctly
+  if (inputGathered) {
+    var newPw = generatePassword();
+    var passwordText = document.querySelector("#password");
+
+    passwordText.value = newPw;
+  }
+}
+
 // Prompts
 function userPrompts() {
   // Reset the array everytime the function is called
@@ -145,17 +162,3 @@ function generatePassword() {
   }
   return password;
 }
-
-// Write password to the #password input
-var inputGathered = userPrompts();
-
-// password will only be generated if prompts are answered correctly
-if (inputGathered) {
-  var newPw = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = newPw;
-}
-
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
