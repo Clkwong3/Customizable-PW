@@ -1,7 +1,7 @@
 # Customizable-PW
 
-...Are you tired of trying to come up with distinctive passwords?
-...Can't remember which symbol or character could be used?
+...Are you tired of trying to come up with distinctive passwords?..
+...Can't remember which symbol or character could be used?..
 ...Build an application that makes a random password _for_ you!
 
 ## Description
