@@ -125,7 +125,7 @@ function generatePassword() {
   // Math.random creates random passwords
   for (var i = 0; i < charLength; i++) {
     var randValue = Math.floor(Math.random() * userInput.length);
-    password = password + userInput[randValue];
+    password = userInput[randValue];
   }
   return password;
 }
