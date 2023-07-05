@@ -3,6 +3,7 @@
 var charLength = 8;
 var userInput = [];
 
+// Array for lower, upper, numbers, and special characters
 var lowercaseArray = [
   "a",
   "b",
