@@ -6,13 +6,21 @@ Build an application that makes a random password for you!
 
 ## Description
 
-Write a program that you can use to come up with a random password depending on what you decide. Let's start with the starter code from Friendly-Parakeet.
+Write a program that you can use to come up with a random password depending on what you decide. Given the starter code below, the focus of this project is JavaScript.
 
 ## Source of starter code
 
 Friendly-Parakeet: https://github.com/coding-boot-camp/friendly-parakeet
 
-## Explanation
+## Things to keep in mind
+
+- **Arrays** can be used to store any data element, including letters and symbols.
+
+- **Functions** define what you want; in this case, write a password and generate a password.
+
+- **For loops** will check for specific conditions before running a block of code repeatedly as long as those conditions are met.
+
+- **If conditions** will run a piece of code based on a specified condition once.
 
 ## Preview
 
