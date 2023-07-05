@@ -1,7 +1,7 @@
 // Assignment code here
 // Default length is 8 characters
 var charLength = 8;
-var userChoice = [];
+var userInput = [];
 
 var lowercaseArray = [
   "a",
@@ -100,9 +100,9 @@ var specialCharArray = [
 var generateBtn = document.querySelector("#generate");
 
 // Prompts
-function promptInfo() {
+function userPrompts() {
   // Reset the array everytime the function is called
-  userChoice = [];
+  userInput = [];
 
   charLength = parseInt(
     prompt(
@@ -116,19 +116,19 @@ function promptInfo() {
   }
 
   if (confirm("Do you want to include lowercase letters?")) {
-    userChoice = userChoice.concat(lowercaseArray);
+    userInput = userInput.concat(lowercaseArray);
   }
 
   if (confirm("Do you want to include uppercase letters?")) {
-    userChoice = userChoice.concat(uppercaseArray);
+    userInput = userInput.concat(uppercaseArray);
   }
 
   if (confirm("Do you want to include numbers?")) {
-    userChoice = userChoice.concat(numericArray);
+    userInput = userInput.concat(numericArray);
   }
 
   if (confirm("Do you want to include special characters?")) {
-    userChoice = userChoice.concat(specialCharArray);
+    userInput = userInput.concat(specialCharArray);
   }
   return true;
 }
