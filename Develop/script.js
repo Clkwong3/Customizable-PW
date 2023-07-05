@@ -147,7 +147,7 @@ function generatePassword() {
 }
 
 // Write password to the #password input
-var inputGathered = userInput();
+var inputGathered = userPrompts();
 
 // password will only be generated if prompts are answered correctly
 if (inputGathered) {
