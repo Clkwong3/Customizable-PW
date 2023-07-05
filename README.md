@@ -14,4 +14,4 @@ Friendly-Parakeet: https://github.com/coding-boot-camp/friendly-parakeet
 
 ## Link
 
-To deploy:
+To deploy: https://clkwong3.github.io/Customizable-PW/
