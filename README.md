@@ -2,20 +2,14 @@
 
 generate passwords based upon user input
 
-##Source of starter code
+## Source of starter code
+
 Friendly-Parakeet: https://github.com/coding-boot-camp/friendly-parakeet
 
-##Features
-Simple Navigation
-Accessible Contact Information
-Resume/About Me
-Brief Showcase of Projects or Designs
-Overview of Qualifications and Skills
+## Preview
 
-##Advice
-Before you start coding, make a rough draft of what your website should look like. This can be used as a guide when you are frustrated or confused.
+![Full Page Image](./Develop/assets/image/_Users_ECY_bootcamp_Challenges_Customizable-PW_Develop_index.html.png)
 
-##Preview
+## Link
 
-##Link
 To deploy:
