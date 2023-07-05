@@ -146,6 +146,7 @@ function userPrompts() {
     return false;
   }
 
+  // 'concat' joins multiple strings together
   if (confirm("Do you want to include lowercase letters?")) {
     userInput = userInput.concat(lowerArray);
   }
