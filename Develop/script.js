@@ -116,19 +116,19 @@ function promptInfo() {
   }
 
   if (confirm("Do you want to include lowercase letters?")) {
-    userChoice = userChoice(lowercaseArray);
+    userChoice = userChoice.push.apply(lowercaseArray);
   }
 
   if (confirm("Do you want to include uppercase letters?")) {
-    userChoice = userChoice(uppercaseArray);
+    userChoice = userChoice.push.apply(uppercaseArray);
   }
 
   if (confirm("Do you want to include numbers?")) {
-    userChoice = userChoice(numericArray);
+    userChoice = userChoice.push.apply(numericArray);
   }
 
   if (confirm("Do you want to include special characters?")) {
-    userChoice = userChoice(specialCharArray);
+    userChoice = userChoice.push.apply(specialCharArray);
   }
   return true;
 }
