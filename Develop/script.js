@@ -154,7 +154,7 @@ if (inputGathered) {
   var newPw = generatePassword();
   var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
+  passwordText.value = newPw;
 }
 
 // Add event listener to generate button
