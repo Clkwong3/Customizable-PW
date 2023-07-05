@@ -147,11 +147,11 @@ function userPrompts() {
   }
 
   if (confirm("Do you want to include lowercase letters?")) {
-    userInput = userInput.concat(lowercaseArray);
+    userInput = userInput.concat(lowerArray);
   }
 
   if (confirm("Do you want to include uppercase letters?")) {
-    userInput = userInput.concat(uppercaseArray);
+    userInput = userInput.concat(upperArray);
   }
 
   if (confirm("Do you want to include numbers?")) {
