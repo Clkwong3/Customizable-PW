@@ -135,6 +135,15 @@ function userPrompts() {
 
 // Define generatePassword
 function generatePassword() {
+  var password = "";
+
+  // Math.floor will round any number down to the nearest integer
+  // Math.random creates random passwords
+  for (var i = 0; i < charLength; i++) {
+    var create = Math.floor(Math.random() * userInput.length);
+    password += create;
+  }
+
   console.log("red button clicked");
 }
 
