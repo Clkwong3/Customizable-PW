@@ -116,6 +116,19 @@ function writePassword() {
   }
 }
 
+// Define generatePassword
+function generatePassword() {
+  var password = "";
+
+  // Math.floor will round any number down to the nearest integer
+  // Math.random creates random passwords
+  for (var i = 0; i < charLength; i++) {
+    var randValue = Math.floor(Math.random() * userInput.length);
+    password = password + userInput[randValue];
+  }
+  return password;
+}
+
 // Prompts
 function userPrompts() {
   // Reset the array everytime the function is called
@@ -148,17 +161,4 @@ function userPrompts() {
     userInput = userInput.concat(specialCharArray);
   }
   return true;
-}
-
-// Define generatePassword
-function generatePassword() {
-  var password = "";
-
-  // Math.floor will round any number down to the nearest integer
-  // Math.random creates random passwords
-  for (var i = 0; i < charLength; i++) {
-    var randValue = Math.floor(Math.random() * userInput.length);
-    password = password + userInput[randValue];
-  }
-  return password;
 }
