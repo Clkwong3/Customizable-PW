@@ -139,7 +139,10 @@ function generatePassword() {
 }
 
 // Write password to the #password input
-function writePassword() {
+var inputGathered = userInput();
+
+// password will only be generated if prompts are answered correctly
+if (inputGathered) {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
