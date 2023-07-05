@@ -151,7 +151,7 @@ var inputGathered = userPrompts();
 
 // password will only be generated if prompts are answered correctly
 if (inputGathered) {
-  var password = generatePassword();
+  var newPw = generatePassword();
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
