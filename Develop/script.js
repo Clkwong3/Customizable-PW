@@ -104,7 +104,7 @@ generateBtn.addEventListener("click", writePassword);
 
 // Write password to the #password input
 function writePassword() {
-  var inputGathered = generatePassword();
+  var inputGathered = userPrompts();
   var passwordText = document.querySelector("#password");
 
   // password will only be generated if prompts are answered correctly
