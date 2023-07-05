@@ -101,6 +101,9 @@ var generateBtn = document.querySelector("#generate");
 
 // Prompts
 function promptInfo() {
+  // Reset the array everytime the function is called
+  userChoice = [];
+
   charLength = parseInt(
     prompt(
       "How many characters would you like? Choose any number between 8 - 128"
@@ -122,6 +125,7 @@ function promptInfo() {
   if (confirm("Do you want to include special characters?")) {
     userChoice = userChoice(specialCharArray);
   }
+  return true;
 }
 
 // Define generatePassword
