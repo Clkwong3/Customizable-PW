@@ -144,7 +144,6 @@ function generatePassword() {
     password = password + userInput[randValue];
   }
   return password;
-  console.log("red button clicked");
 }
 
 // Write password to the #password input
