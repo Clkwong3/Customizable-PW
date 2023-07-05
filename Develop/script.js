@@ -1,4 +1,10 @@
 // Assignment code here
+// Default length is 8 characters
+var charLength = 8;
+var lowercaseArray = [];
+var uppercaseArray = [];
+var numericArray = [];
+var specialCharArray = [];
 
 // The red generate button
 var generateBtn = document.querySelector("#generate");
