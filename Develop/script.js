@@ -109,6 +109,11 @@ function promptInfo() {
       "How many characters would you like? Choose any number between 8 - 128"
     )
   );
+  // NaN = not a number
+  if (isNaN(charLength) || charLength < 8 || charLength > 128) {
+    alert("It needs to be a number between 8 and 128. Please try again.");
+    return false;
+  }
 
   if (confirm("Do you want to include lowercase letters?")) {
     userChoice = userChoice(lowercaseArray);
