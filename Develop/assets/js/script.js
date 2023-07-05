@@ -4,7 +4,7 @@ var charLength = 8;
 var userInput = [];
 
 // Array for lower, upper, numbers, and special characters
-var lowercaseArray = [
+var lowerArray = [
   "a",
   "b",
   "c",
@@ -33,7 +33,7 @@ var lowercaseArray = [
   "z",
 ];
 
-var uppercaseArray = [
+var upperArray = [
   "A",
   "B",
   "C",
