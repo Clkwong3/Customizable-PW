@@ -140,10 +140,10 @@ function generatePassword() {
   // Math.floor will round any number down to the nearest integer
   // Math.random creates random passwords
   for (var i = 0; i < charLength; i++) {
-    var create = Math.floor(Math.random() * userInput.length);
-    password += create;
+    var randValue = Math.floor(Math.random() * userInput.length);
+    password = password + userInput[randValue];
   }
-
+  return password;
   console.log("red button clicked");
 }
 
