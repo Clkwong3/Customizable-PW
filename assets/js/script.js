@@ -3,7 +3,7 @@
 var charLength = 8;
 var userInput = [];
 
-// Array for lower, upper, numbers, and special characters
+// Strings for lower, upper, numbers, and special characters
 var lowerArray = [
   "a",
   "b",
@@ -135,15 +135,23 @@ function userPrompts() {
   // Reset the array everytime the function is called
   userInput = [];
 
-  charLength = parseInt(
-    prompt(
-      "How many characters would you like? Choose any number between 8 - 128"
-    )
+  charLength = prompt(
+    "How many characters would you like? Choose any number between 8 - 128"
   );
+
+  // Close the prompt when user cancels
+  if (charLength === null) {
+    return;
+  }
+
+  // Convert value into a number
+  charLength = Number(charLength);
+
   // NaN = not a number
   if (isNaN(charLength) || charLength < 8 || charLength > 128) {
-    alert("It needs to be a number between 8 and 128. Please try again.");
-    return false;
+    alert("The number must be between 8 and 128. Please try again.");
+    userPrompts();
+    return;
   }
 
   // 'concat' joins multiple strings together
