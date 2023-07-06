@@ -4,65 +4,11 @@ var charLength = 8;
 var userInput = [];
 
 // Strings for lower, upper, numbers, and special characters
-var lowerArray = [
-  "a",
-  "b",
-  "c",
-  "d",
-  "e",
-  "f",
-  "g",
-  "h",
-  "i",
-  "j",
-  "k",
-  "l",
-  "m",
-  "n",
-  "o",
-  "p",
-  "q",
-  "r",
-  "s",
-  "t",
-  "u",
-  "v",
-  "w",
-  "x",
-  "y",
-  "z",
-];
+var lowerString = "abcdefghijklmnopqrstuvwxyz";
 
-var upperArray = [
-  "A",
-  "B",
-  "C",
-  "D",
-  "E",
-  "F",
-  "G",
-  "H",
-  "H",
-  "J",
-  "K",
-  "L",
-  "M",
-  "N",
-  "O",
-  "P",
-  "Q",
-  "R",
-  "S",
-  "T",
-  "U",
-  "V",
-  "W",
-  "X",
-  "Y",
-  "Z",
-];
+var upperString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-var numericArray = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
+var numericString = "1234567890";
 
 var specialCharArray = [
   " ",
@@ -156,15 +102,15 @@ function userPrompts() {
 
   // 'concat' joins multiple strings together
   if (confirm("Do you want to include lowercase letters?")) {
-    userInput = userInput.concat(lowerArray);
+    userInput = userInput.concat(lowerString.split(""));
   }
 
   if (confirm("Do you want to include uppercase letters?")) {
-    userInput = userInput.concat(upperArray);
+    userInput = userInput.concat(upperString.split(""));
   }
 
   if (confirm("Do you want to include numbers?")) {
-    userInput = userInput.concat(numericArray);
+    userInput = userInput.concat(numericString.split(""));
   }
 
   if (confirm("Do you want to include special characters?")) {
