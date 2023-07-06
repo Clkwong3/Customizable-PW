@@ -3,14 +3,14 @@
 var charLength = 8;
 var userInput = [];
 
-// Strings and array for lower, upper, numbers, and special characters
+// Strings for lower, upper, numbers, and special characters
 var lowerString = "abcdefghijklmnopqrstuvwxyz";
 
 var upperString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 var numericString = "1234567890";
 
-// var specialCharArray = ' !"#$%&'()*+-,./\:;<=>?@[]^_`|{}~';
+var specialCharString = ` !"#$%&'()*+-,./:;<=>?@[]^_|{}~`;
 
 // The red generate button
 var generateBtn = document.querySelector("#generate");
@@ -83,7 +83,7 @@ function userPrompts() {
   }
 
   if (confirm("Do you want to include special characters?")) {
-    userInput = userInput.concat(specialCharArray);
+    userInput = userInput.concat(specialCharString);
   }
   return true;
 }
