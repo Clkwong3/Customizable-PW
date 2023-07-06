@@ -3,7 +3,7 @@
 var charLength = 8;
 var userInput = [];
 
-// Strings for lower, upper, numbers, and special characters
+// Strings and array for lower, upper, numbers, and special characters
 var lowerString = "abcdefghijklmnopqrstuvwxyz";
 
 var upperString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
