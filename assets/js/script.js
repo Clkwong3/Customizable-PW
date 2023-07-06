@@ -10,38 +10,7 @@ var upperString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 var numericString = "1234567890";
 
-var specialCharArray = [
-  " ",
-  "!",
-  "#",
-  "$",
-  "%",
-  "&",
-  "(",
-  ")",
-  "*",
-  "[",
-  "]",
-  "+",
-  ",",
-  "-",
-  ".",
-  "/",
-  ":",
-  ";",
-  "<",
-  ">",
-  "=",
-  "?",
-  "@",
-  "^",
-  "_",
-  "`",
-  "{",
-  "}",
-  "|",
-  "~",
-];
+// var specialCharArray = ' !"#$%&'()*+-,./\:;<=>?@[]^_`|{}~';
 
 // The red generate button
 var generateBtn = document.querySelector("#generate");
