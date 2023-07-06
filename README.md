@@ -14,7 +14,9 @@ Friendly-Parakeet: https://github.com/coding-boot-camp/friendly-parakeet
 
 ## Things to keep in mind
 
-- **Arrays** can be used to store any data element, including letters and symbols.
+- **Arrays** can be used to store multiple data elements, including letters and symbols.
+
+- **Strings** is a set of characters which make up a single data element.
 
 - **Functions** define what you want; in this case, write a password and generate a password.
 
