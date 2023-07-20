@@ -26,7 +26,7 @@ Friendly-Parakeet: https://github.com/coding-boot-camp/friendly-parakeet
 
 ## Preview
 
-![Full Page Image](./assets/image/_Users_ECY_bootcamp_Challenges_Customizable-PW_Develop_index.html.png)
+![Full Page Image](/assets/image/clkwong3.github.io%3ACustomizable-PW.png)
 
 ## Link
 
