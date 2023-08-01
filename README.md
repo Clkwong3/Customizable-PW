@@ -1,28 +1,26 @@
 # Customizable-PW
 
-Are you tired of trying to come up with distinctive passwords?  
- Can't remember which symbol or character could be used?  
- Build an application that makes a random password _for_ you!
+A password generator is a great way to make unique and secure passwords for different apps while still keeping your personal info safe. It's a web-based tool that lets the user decide the length and type of characters in the password.
 
-## Description
+## Focus
 
-Write a program that you can use to come up with a random password depending on what you decide. Given the starter code below, the focus of this project is JavaScript.
+Write a program that allow users to customize the password length and select which types of characters (lowercase letters, uppercase letters, numbers, and/or special characters) should be included. When the "Generate Password" button is clicked, the user will be prompted to provide these preferences, and the generated password will be displayed accordingly. Given the starter code below, the focus of this project is JavaScript.
 
 ## Source of starter code
 
 Friendly-Parakeet: https://github.com/coding-boot-camp/friendly-parakeet
 
-## Things to keep in mind
+## Expectations
 
-- **Arrays** can be used to store multiple data elements, including letters and symbols.
+The user will see the password generator interface when opening the HTML file in a web browser. After clicking the "Generate Password" button and answering the required prompts, a random password will be displayed in the text area.
 
-- **Strings** is a set of characters which make up a single data element.
+## Code Breakdown
 
-- **Functions** define what you want; in this case, write a password and generate a password.
+- HTML: Make an outline of what the application does.
 
-- **For loops** will check for specific conditions before running a block of code repeatedly as long as those conditions are met.
+- CSS: Decide the overall layout, font, colors, and other visual properties of the elements.
 
-- **If conditions** will run a piece of code based on a specified condition once.
+- JavaScript: It gives users access to the website and generates a password from a list of categories based on their input.
 
 ## Preview
 
