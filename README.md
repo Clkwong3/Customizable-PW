@@ -28,4 +28,4 @@ The user will see the password generator interface when opening the HTML file in
 
 ## Link
 
-To deploy: https://clkwong3.github.io/Customizable-PW/
+To deploy: Click [here](https://clkwong3.github.io/Customizable-PW/)
