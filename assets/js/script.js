@@ -5,11 +5,8 @@ var userInput = [];
 
 // Strings for lower, upper, numbers, and special characters
 var lowerString = "abcdefghijklmnopqrstuvwxyz";
-
 var upperString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
 var numericString = "1234567890";
-
 var specialCharString = ` !"#$%&'()*+-,./:;<=>?@[]^_|{}~`;
 
 // The red generate button
@@ -26,37 +23,22 @@ function writePassword() {
   // password will only be generated if prompts are answered correctly
   if (inputGathered) {
     var newPw = generatePassword();
-    var passwordText = document.querySelector("#password");
-
     passwordText.value = newPw;
   }
 }
 
-// Define generatePassword
-function generatePassword() {
-  var password = "";
-
-  // Math.floor will round any number down to the nearest integer
-  // Math.random creates random passwords
-  for (var i = 0; i < charLength; i++) {
-    var randValue = Math.floor(Math.random() * userInput.length);
-    password = password + userInput[randValue];
-  }
-  return password;
-}
-
 // Prompts
 function userPrompts() {
-  // Reset the array everytime the function is called
+  // Reset the array every time the function is called
   userInput = [];
 
   charLength = prompt(
     "How many characters would you like? Choose any number between 8 - 128"
   );
 
-  // Close the prompt when user cancels
+  // Close the prompt when the user cancels
   if (charLength === null) {
-    return;
+    return false;
   }
 
   // Convert value into a number
@@ -65,8 +47,7 @@ function userPrompts() {
   // NaN = not a number
   if (isNaN(charLength) || charLength < 8 || charLength > 128) {
     alert("The number must be between 8 and 128. Please try again.");
-    userPrompts();
-    return;
+    return false;
   }
 
   // 'concat' joins multiple strings together
@@ -83,7 +64,69 @@ function userPrompts() {
   }
 
   if (confirm("Do you want to include special characters?")) {
-    userInput = userInput.concat(specialCharString);
+    userInput = userInput.concat(specialCharString.split(""));
   }
+
+  if (userInput.length === 0) {
+    alert("Please select at least one character set.");
+    return false;
+  }
+
   return true;
+}
+
+// Define generatePassword
+function generatePassword() {
+  var password = "";
+
+  // Make sure at least one character from each category is added
+  var hasLower = false;
+  var hasUpper = false;
+  var hasNumber = false;
+  var hasSpecial = false;
+
+  // Add characters from the userInput array to the password
+  for (var i = 0; i < charLength; i++) {
+    var randValue = Math.floor(Math.random() * userInput.length);
+    var char = userInput[randValue];
+
+    if (!hasLower && lowerString.includes(char)) {
+      hasLower = true;
+    } else if (!hasUpper && upperString.includes(char)) {
+      hasUpper = true;
+    } else if (!hasNumber && numericString.includes(char)) {
+      hasNumber = true;
+    } else if (!hasSpecial && specialCharString.includes(char)) {
+      hasSpecial = true;
+    }
+
+    password += char;
+  }
+
+  // Add missing characters from each category if necessary
+  if (!hasLower) {
+    password += lowerString.charAt(
+      Math.floor(Math.random() * lowerString.length)
+    );
+  }
+  if (!hasUpper) {
+    password += upperString.charAt(
+      Math.floor(Math.random() * upperString.length)
+    );
+  }
+  if (!hasNumber) {
+    password += numericString.charAt(
+      Math.floor(Math.random() * numericString.length)
+    );
+  }
+  if (!hasSpecial) {
+    password += specialCharString.charAt(
+      Math.floor(Math.random() * specialCharString.length)
+    );
+  }
+
+  // Make sure the length is correct
+  password = password.slice(0, charLength);
+
+  return password;
 }
