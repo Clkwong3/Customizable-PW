@@ -1,5 +1,3 @@
-// Assignment code here
-// Default length is 8 characters
 var charLength = 8;
 var userInput = [];
 
